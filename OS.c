@@ -37,9 +37,9 @@ void findTurnAroundTime(struct Process proc[], int n) {
 }
 
 void printProcessTable(struct Process proc[], int n) {
-  printf("Processes                                           Burst Time  Waiting Time      Turnaround Time\n");
+  printf("Processes Burst Time Waiting Time Turnaround Time\n");
   for (int i = 0; i < n; i++) {
-    printf("Process %d                                         %d             %d                  %d \n", proc[i].pid, proc[i].bt, proc[i].wt, proc[i].tat);
+    printf("Process %d %d %d %d \n", proc[i].pid, proc[i].bt, proc[i].wt, proc[i].tat);
   }
 }
 
